@@ -62,5 +62,5 @@ height :: Tree a -> Int
 height Empty        = 0
 height (Tree _ l r) = 1 + max (height l) (height r)
 
-data Direction = Left | Right | Straight
+data Direction = LeftTurn | RightTurn | Straight
                deriving Show
